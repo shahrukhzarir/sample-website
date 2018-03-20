@@ -49,7 +49,7 @@ if(isset($_POST['admin_login']))//this will tell us what to do if some data has 
     $admin_name=$_POST['admin_name'];//recieve user name
     $admin_pass=$_POST['admin_pass'];//recieve password
 
-    $admin_query="select * from admin where admin_name='$admin_name' AND admin_pass='$admin_pass'"; //set up this query to check if valid
+    $admin_query="select * from admin_table where admin_name='$admin_name' AND admin_pass='$admin_pass'"; //set up this query to check if valid
 
     $run_query=mysqli_query($dbcon,$admin_query);
 
